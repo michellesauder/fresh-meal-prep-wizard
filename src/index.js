@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode className= 'container is-max-desktop'>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

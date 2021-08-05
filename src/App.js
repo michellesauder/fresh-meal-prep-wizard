@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import DiscountHeader from './components/DiscountHeader.jsx';
+import Hero from './components/Hero';
+
+export const discount = 15;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="fresh-meal-wizard-container is-flex container is-max-desktop">
+      <DiscountHeader discount={` $${discount} off first box: Code FIRSTBOX automatically applied`} />
+      <Hero />
     </div>
   );
 }

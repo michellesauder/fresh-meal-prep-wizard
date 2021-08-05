@@ -1,3 +1,7 @@
+.fresh-meal-wizard-container{
+  display: flex;
+}
+
 .App {
   text-align: center;
 }
